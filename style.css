@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: 'VT323', monospace;
+    /* text-align: center; */
+    font-weight: normal;
+    font-size: larger;
+}
+input {
+    background-color: rgb(0, 0, 0);
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: larger;
+    padding: 10px 0px;
+    color: lime;
+    border-color: lime;
+    border-style: solid;
+}
