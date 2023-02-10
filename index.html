@@ -15,21 +15,25 @@
     <h2>========================================</h2>
     <h2>[ <span>Your Password Here</span> ]</h2>
     <h2>========================================</h2>
-    
+    <form>
     <h2>Character Types <span>- Click to Select</span></h2>
     <div class="options">
-        <h3>Lower Case</h3>
-        <h3>Upper Case</h3>
-        <h3>Numbers</h3>
-        <h3>Special Characters</h3>
+        <h3  id="lower-case-toggle">Lower Case</h3>
+        <h3 id="upper-case-toggle">Upper Case</h3>
+        <h3 id="numbers-toggle">Numbers</h3>
+        <h3 id="special-characters-toggle">Special Characters</h3>
     </div>
     <h2>Length <span>- Input Number</span></h2>
     <input type="numeric" id="length" name="length" min="1" max="100" value="8">
     <h2>========================================</h2>
-    <h2>[Generate]</h2>
+    <button><h2>[Generate]</h2></button>
+    </form>
+    
     
 
 
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

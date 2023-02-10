@@ -16,3 +16,25 @@ input {
     border-color: lime;
     border-style: solid;
 }
+button {
+    background-color: rgb(0, 0, 0);
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    color: lime;
+    border-color: lime;
+    border-style: none;
+}
+
+.options h3 {
+    color: green;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.options .active{
+    color: lime;
+}
