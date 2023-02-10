@@ -7,6 +7,42 @@ let options = {
     specialCharacters: false,
 }
 
+const handleFormSubmit = (e) => {
+    e.preventDefault();
+    
+    const passwordLength = $('#length').val()
+    console.log(passwordLength);
+
+    let characterString = "";
+    let generatedPassword = ""
+    if (options.lowerCase) {
+        characterString += "qwertyuiopasdfghjklzxcvbnm"
+    }
+    if (options.upperCase) {
+        characterString += "QWERTYUIOPASDFGHJKLZXCVBNM"
+    }
+    if (options.numbers) {
+        characterString += "1234567890"
+    }
+    if (options.specialCharacters) {
+        characterString += "~!@#$%^&*()_-+=`[]{}|; :<,>.?/'"+'"';
+    }
+    
+    if (characterString){
+    for (i = 0; i <= passwordLength; i++) {
+        generatedPassword += characterString[Math.floor(Math.random()*(characterString.length))]
+    }
+    console.log(generatedPassword);
+    $("#password-display").text(generatedPassword);
+    }
+    else
+    {
+        $("#password-display").text("You Must Select At Least One Character Type");
+    }
+
+}
+
+
 $('#lower-case-toggle').click(()=> {
     options.lowerCase = !options.lowerCase;
     console.log(options);
@@ -55,3 +91,5 @@ $('#special-characters-toggle').click(()=> {
         $('#special-characters-toggle').removeClass('active');
     }
 })
+
+$("#password-options").submit(handleFormSubmit);

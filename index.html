@@ -13,9 +13,9 @@
 <body>
     <h1>PASSWORD GENERATOR</h1>
     <h2>========================================</h2>
-    <h2>[ <span>Your Password Here</span> ]</h2>
+    <h2>[ <span id="password-display">Your Password Here</span> ]</h2>
     <h2>========================================</h2>
-    <form>
+    <form id="password-options">
     <h2>Character Types <span>- Click to Select</span></h2>
     <div class="options">
         <h3  id="lower-case-toggle">Lower Case</h3>
@@ -24,7 +24,7 @@
         <h3 id="special-characters-toggle">Special Characters</h3>
     </div>
     <h2>Length <span>- Input Number</span></h2>
-    <input type="numeric" id="length" name="length" min="1" max="100" value="8">
+    <input type="number" id="length" name="length" min="1" max="100" value="8">
     <h2>========================================</h2>
     <button><h2>[Generate]</h2></button>
     </form>
